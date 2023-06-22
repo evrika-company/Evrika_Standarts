@@ -12,7 +12,12 @@ const commitTypes = [
     section: 'Изменения внешних зависимостей',
   },
   {
-    value: 'ci',
+    value: 'change',
+    name: 'change:      Стандартные изменения по проекту',
+    hidden: 'true',
+  },
+  {
+    value: 'ci/cd',
     name: 'ci/cd:      Конфигурация CI или изменения CD параметров',
     hidden: 'true',
   },
@@ -43,7 +48,7 @@ const commitTypes = [
   },
   {
     value: 'revert',
-    name: 'revert:      Возврат на прошлые коммиты',
+    name: 'revert:      Реструктуризация и улучшения кода',
     hidden: 'true',
   },
   {
@@ -65,6 +70,11 @@ const commitTypes = [
     value: 'security',
     name:'security:      Исправление уязвимостей или улучшение безопасности',
     section: 'Улучшения безопасности',
+  },
+  {
+    value: 'BREAKING CHANGE:',
+    name:'BREAKING CHANGE::      Координальные изменения в архитектуре или в системе проекта',
+    section: 'Координальные изменения в проекте',
   }
 ];
 
