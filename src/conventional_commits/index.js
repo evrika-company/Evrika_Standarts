@@ -1,95 +1,83 @@
-const getCommitTypesToCommitizen = function() {
-
-};
-
-const getCommitTypesToChangelock = function() {
-
-};
-
+// Типы для установки смыслового значения коммита
 
 const commitTypes = [
   {
     value: 'build',
     name: 'build:      Изменения процесса сборки',
-    section: '',
-    hidden: '',
+    hidden: 'true',
   },
   {
     value: 'package',
-    name: 'package:      Добавление внешних зависимостей',
-    section: '',
-    hidden: '',
+    name: 'package:      Добавление или удаление внешних зависимостей',
+    section: 'Изменения внешних зависимостей',
   },
   {
     value: 'ci',
-    name: '',
-    section: '',
-    hidden: '',
+    name: 'ci/cd:      Конфигурация CI или изменения CD параметров',
+    hidden: 'true',
   },
   {
     value: 'docs',
-    name: '',
-    section: '',
-    hidden: '',
+    name: 'docs:      Добавление или изменения документации',
+    hidden: 'true',
   },
   {
     value: 'feat',
-    name: '',
-    section: '',
-    hidden: '',
+    name: 'feat:      Создание нового функционала',
+    section: 'Новый функционал',
   },
   {
     value: 'fix',
-    name: '',
-    section: '',
-    hidden: '',
+    name: 'fix:     Исправление багов(именно багов не фич)',
+    section: 'Исправления ошибок',
   },
   {
     value: 'perf',
-    name: '',
-    section: '',
-    hidden: '',
+    name: 'perf:      Улучшения направленные на производительность',
+    section: 'Улучшения производительности',
   },
   {
     value: 'refactor',
-    name: '',
-    section: '',
-    hidden: '',
+    name: 'refactor:      Реструктуризация и улучшения кода',
+    hidden: 'true',
   },
   {
     value: 'revert',
-    name: '',
-    section: '',
-    hidden: '',
+    name: 'revert:      Возврат на прошлые коммиты',
+    hidden: 'true',
   },
   {
     value: 'style',
     name: 'style:      Правки по стилю кода и линтированию',
-    section: '',
-    hidden: '',
+    hidden: 'true',
   },
   {
     value: 'test',
     name: 'test:      Добавление тестов или изменение процесса тестирования',
-    section: '',
-    hidden: '',
+    hidden: 'true',
   },
   {
     value: 'custom',
     name: 'custom:      Изменения имеющие специфичную область действия',
-    section: '',
-    hidden: '',
-  },
-  {
-    value: 'config',
-    name: 'config:      Изменения в конфигурационных файлах или параметрах',
-    section: '',
-    hidden: '',
+    hidden: true,
   },
   {
     value: 'security',
     name:'security:      Исправление уязвимостей или улучшение безопасности',
-    section: '',
-    hidden: '',
+    section: 'Улучшения безопасности',
   }
 ];
+
+const scopeTypes = [
+  { name: ""},
+  { name: `custom`},
+  { name: "style" },
+  { name: "git" },
+  { name: "scripts" },
+  { name: "components" },
+  { name: "code" },
+  { name: "files" },
+  { name: "config" },
+];
+
+export default { commitTypes, scopeTypes }
