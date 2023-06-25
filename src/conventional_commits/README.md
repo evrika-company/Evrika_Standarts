@@ -1,0 +1,3 @@
+### Работа с Conventional Commits
+
+Согласно поддерживаемого нашей командой стандарта [Conventional Commits](https://www.conventionalcommits.org/ru/v1.0.0/) мы добавилии и модифицировали некоторый значение для типов коммитов и определили их в файле *__'conventional_commits/index.js'__*.Файл выполняет роль единственно верного источника правды о типах принятых коммитов и областей видимости.На основе этих данных создаеются модификации и настроаиваются другие пакеты и иснтурменты такие кака [Commitizen](https://commitizen-tools.github.io/commitizen/), [release-it](https://github.com/release-it/release-it/tree/main), 
