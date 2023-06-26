@@ -4,6 +4,7 @@ const conventionalCommits = require('../conventional_commits/index');
 
 const getCommitTypesToChangelock = function(types) {
     return types.map(function(element) {
+        //console.log(element,33)
         let typeCommit = {
           "type": element.value,
         };
@@ -15,11 +16,18 @@ const getCommitTypesToChangelock = function(types) {
 };
 
 module.exports = {
-    "infile": "CHANGELOG.md",
-    "header": 'Журнал изменений',
-    "preset": {
+      "name": "conventionalcommits",
       "types": [
         ...getCommitTypesToChangelock(conventionalCommits.commitTypes)
       ],
-    }
 }
+
+// console.log(999,{
+//     "infile": "CHANGELOG.md",
+//     "header": "Журнал изменений",
+//     "preset": {
+//       "name": "conventionalcommits",
+//       "types": [
+//         ...getCommitTypesToChangelock(conventionalCommits.commitTypes)
+//       ],
+//     }})
