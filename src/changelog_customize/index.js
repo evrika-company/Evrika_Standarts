@@ -3,13 +3,14 @@
 const conventionalCommits = require('../conventional_commits/index');
 
 const getCommitTypesToChangelock = function(types) {
-    return types.map((element) => {
-        let type = {};
+    return types.map(function(element) {
+        let typeCommit = {
+          "type": element.value,
+        };
 
-        type.type = element.value;
-        element.section ? type.section = element.section : type.hidden = element.hidden;
-
-        return type
+        element.section ? typeCommit.section = element.section : typeCommit.hidden = element.hidden;
+        console.log(typeCommit,333)
+        return typeCommit
     })
 };
 
