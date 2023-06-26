@@ -1,23 +1,21 @@
 "use strict";
 
-import { commitTypes, scopeTypes } from "../conventional_commits";
+const conventionalCommits = require('../conventional_commits/index');
 
 const getCommitTypesToCommitizen = function(types) {
-  return types.map((type) => { 
-    return { 
-      "value": type.value, 
-      "name": type.name,
-    }
+  return types.map(function(type) { 
+    return { "value": type.value, "name": type.name }
   })
 };
 
+
 module.exports = {
   types: [
-    ...getCommitTypesToCommitizen(commitTypes)
+    ...getCommitTypesToCommitizen(conventionalCommits.commitTypes)
   ],
 
   scopes: [
-    ...scopeTypes
+    ...conventionalCommits.scopeTypes
   ],
 
   messages: {

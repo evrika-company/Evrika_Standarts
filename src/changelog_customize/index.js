@@ -1,6 +1,6 @@
 "use strict";
 
-import { commitTypes } from "../conventional_commits";
+const conventionalCommits = require('../conventional_commits/index');
 
 const getCommitTypesToChangelock = function(types) {
     return types.map((element) => {
@@ -16,7 +16,7 @@ const getCommitTypesToChangelock = function(types) {
 module.exports = {
     "header": 'Журнал изменений',
     "types": [
-        ...getCommitTypesToChangelock(commitTypes)
+        ...getCommitTypesToChangelock(conventionalCommits.commitTypes)
     ],
     "preMajor": false,
 }

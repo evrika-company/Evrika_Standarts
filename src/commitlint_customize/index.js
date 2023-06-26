@@ -1,6 +1,6 @@
 "use strict";
 
-import { commitTypes, scopeTypes } from "../conventional_commits";
+const conventionalCommits = require('../conventional_commits/index');
 
 export default {
   rules: {
@@ -15,7 +15,7 @@ export default {
     'scope-enum': [
       1,
       'always',
-      scopeTypes.scopes.map(type => type.name)
+      conventionalCommits.scopeTypes.map(type => type.name)
     ],
     "subject-empty": [2, "never"],
     "subject-full-stop": [2, "never", "."],
@@ -24,7 +24,7 @@ export default {
     "type-enum": [
       2,
       "always",
-      commitTypes.map(type => type.value)
+      conventionalCommits.commitTypes.map(type => type.value)
     ]
   }
 }
