@@ -34,11 +34,7 @@
   },
   "release-it": {
     "plugins": {
-      "@release-it/conventional-changelog": {
-        "infile": "CHANGELOG.md",
-        "header": "# Changelog",
-        "preset": "./src/changelog_customize/index.js"
-      }
+      "@release-it/conventional-changelog": "./src/changelog_customize/index.js"
     }
   },
   "author": "Evrika Company, German Shlyaiger",

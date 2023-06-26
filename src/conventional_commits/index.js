@@ -5,7 +5,7 @@ module.exports = {
     {
       value: 'build',
       name: 'build:      Изменения процесса сборки',
-      hidden: 'true',
+      hidden: true,
     },
     {
       value: 'package',
@@ -15,17 +15,17 @@ module.exports = {
     {
       value: 'change',
       name: 'change:      Стандартные изменения по проекту',
-      hidden: 'true',
+      hidden: true,
     },
     {
       value: 'ci/cd',
       name: 'ci/cd:      Конфигурация CI или изменения CD параметров',
-      hidden: 'true',
+      hidden: true,
     },
     {
       value: 'docs',
       name: 'docs:      Добавление или изменения документации',
-      hidden: 'true',
+      hidden: true,
     },
     {
       value: 'feat',
@@ -45,22 +45,22 @@ module.exports = {
     {
       value: 'refactor',
       name: 'refactor:      Реструктуризация и улучшения кода',
-      hidden: 'true',
+      hidden: true,
     },
     {
       value: 'revert',
       name: 'revert:      Реструктуризация и улучшения кода',
-      hidden: 'true',
+      hidden: true,
     },
     {
       value: 'style',
       name: 'style:      Правки по стилю кода и линтированию',
-      hidden: 'true',
+      hidden: true,
     },
     {
       value: 'test',
       name: 'test:      Добавление тестов или изменение процесса тестирования',
-      hidden: 'true',
+      hidden: true,
     },
     {
       value: 'custom',

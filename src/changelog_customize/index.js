@@ -17,7 +17,6 @@ module.exports = {
     "infile": "CHANGELOG.md",
     "header": 'Журнал изменений',
     "preset": {
-      "name": "evrika",
       "types": [
         ...getCommitTypesToChangelock(conventionalCommits.commitTypes)
       ],
