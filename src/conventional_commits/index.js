@@ -90,4 +90,7 @@ const scopeTypes = [
   { name: "config" },
 ];
 
-export default { commitTypes, scopeTypes }
+module.exports = { 
+  commitTypes, 
+  scopeTypes 
+}

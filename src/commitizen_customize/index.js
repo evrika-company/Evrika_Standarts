@@ -3,12 +3,12 @@
 import { commitTypes, scopeTypes } from "../conventional_commits";
 
 const getCommitTypesToCommitizen = function(types) {
-  return types.map((type) => 
-    {
-      "value": type.value,
+  return types.map((type) => { 
+    return { 
+      "value": type.value, 
       "name": type.name,
     }
-  )
+  })
 };
 
 module.exports = {
