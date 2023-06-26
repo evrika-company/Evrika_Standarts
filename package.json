@@ -37,7 +37,7 @@
       "@release-it/conventional-changelog": {
         "infile": "CHANGELOG.md",
         "header": "Журнал изменений",
-        "preset": "./src/changelog_customize/index.js"
+        "preset": "angular"
       }
     }
   },
