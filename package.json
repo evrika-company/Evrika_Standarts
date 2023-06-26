@@ -37,10 +37,7 @@
       "@release-it/conventional-changelog": {
         "infile": "CHANGELOG.md",
         "header": "# Changelog",
-        "preset": {
-          "name": "conventionalcommits",
-          "types": "./src/changelog_customize/index.js"
-        }
+        "preset": "./src/changelog_customize/index.js"
       }
     }
   },

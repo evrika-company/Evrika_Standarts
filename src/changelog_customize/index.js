@@ -14,9 +14,12 @@ const getCommitTypesToChangelock = function(types) {
 };
 
 module.exports = {
+    "infile": "CHANGELOG.md",
     "header": 'Журнал изменений',
-    "types": [
+    "preset": {
+      "name": "evrika",
+      "types": [
         ...getCommitTypesToChangelock(conventionalCommits.commitTypes)
-    ],
-    "preMajor": false,
+      ],
+    }
 }
