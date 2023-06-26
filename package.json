@@ -37,7 +37,7 @@
       "@release-it/conventional-changelog": {
         "infile": "CHANGELOG.md",
         "header": "Журнал изменений",
-        "preset": "../src/changelog_customize/index.js"
+        "preset": "./src/changelog_customize/index.js"
       }
     }
   },
@@ -51,6 +51,7 @@
     "@babel/cli": "^7.22.5",
     "@babel/core": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
+    "@commitlint/cli": "^17.6.6",
     "@release-it/conventional-changelog": "^5.1.1",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^29.5.0",
