@@ -15,7 +15,6 @@ const getCommitTypesToChangelock = function(types) {
 };
 
 module.exports = {
-  "name": "conventionalcommits",
   "types": [
     ...getCommitTypesToChangelock(conventionalCommits.commitTypes),
     {}

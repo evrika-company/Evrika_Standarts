@@ -1,6 +1,6 @@
 {
   "name": "evrika",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "Agreements on writing commits and managing project versions in Evrika",
   "main": "src/index.js",
   "scripts": {
@@ -36,8 +36,35 @@
     "plugins": {
       "@release-it/conventional-changelog": {
         "infile": "CHANGELOG.md",
-        "header": "Журнал изменений",
-        "preset": "angular"
+        "preset": {
+          "name": "conventionalcommits",
+          "types": [
+            {
+              "type": "package",
+              "section": "Изменения внешних зависимостей"
+            },
+            {
+              "type": "feat",
+              "section": "Новый функционал"
+            },
+            {
+              "type": "fix",
+              "section": "Исправления ошибок"
+            },
+            {
+              "type": "perf",
+              "section": "Улучшения производительности"
+            },
+            {
+              "type": "security",
+              "section": "Улучшения безопасности"
+            },
+            {
+              "type": "BREAKING CHANGE:",
+              "section": "Координальные изменения в проекте"
+            }
+          ]
+        }
       }
     }
   },
