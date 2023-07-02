@@ -9,7 +9,7 @@ export default {
     "header-max-length": [
       2,
       "always",
-      72
+      120
     ],
     "scope-case": [2, "always", "lower-case"],
     'scope-enum': [
