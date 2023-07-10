@@ -51,7 +51,7 @@ module.exports = {
   skipQuestions: [],
   issuePrefixes: [],
   useAI: false,
-  aiNumber: 5, 
+  aiNumber: 1, 
   customScopesAlign: 'bottom',
   customScopesAlias: 'custom',
   emptyScopesAlias: 'empty',
