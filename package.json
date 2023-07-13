@@ -21,7 +21,8 @@
   ],
   "config": {
     "commitizen": {
-      "path": "node_modules/cz-customizable"
+      "path": "node_modules/cz-git",
+      "czConfig": "src/commitizen_customize/index.js"
     }
   },
   "release-it": {
