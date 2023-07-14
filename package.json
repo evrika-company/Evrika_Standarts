@@ -29,34 +29,7 @@
     "plugins": {
       "@release-it/conventional-changelog": {
         "infile": "CHANGELOG.md",
-        "preset": {
-          "types": [
-            {
-              "type": "package",
-              "section": "Изменения внешних зависимостей"
-            },
-            {
-              "type": "feat",
-              "section": "Новый функционал"
-            },
-            {
-              "type": "fix",
-              "section": "Исправления ошибок"
-            },
-            {
-              "type": "perf",
-              "section": "Улучшения производительности"
-            },
-            {
-              "type": "security",
-              "section": "Улучшения безопасности"
-            },
-            {
-              "type": "BREAKING CHANGE:",
-              "section": "Координальные изменения в проекте"
-            }
-          ]
-        }
+        "preset": "angular"
       }
     }
   },
