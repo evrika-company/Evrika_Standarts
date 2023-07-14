@@ -1,0 +1,25 @@
+name: Release Evrika Standarts
+run-name: ${{ github.actor }}  🚀
+on:
+  workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: set git config
+        run: |
+          git config user.name "German-Shlyaiger"
+          git config user.email "germanshlyaiger14@gmail.com"
+      - name: install dependencies     
+      - run: npm ci
+      - name: release package and set version
+      - run: npm run release --ci
+        env:
+          RELEASE: ${{ secrets.RELEASE }}
+      - name: update repo
+      - run: git push origin master
