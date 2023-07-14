@@ -1,5 +1,12 @@
 
 
+## [1.1.1](https://github.com/evrika-company/Evrika_Standarts/compare/1.1.0...1.1.1) (2023-07-14)
+
+
+### Bug Fixes
+
+* **components:** :bug: добавление коментария на точку входа (тест) ([343958c](https://github.com/evrika-company/Evrika_Standarts/commit/343958c8dea7a9bc7be252ecee21b19f24061847))
+
 # 1.1.0 (2023-07-14)
 
 
