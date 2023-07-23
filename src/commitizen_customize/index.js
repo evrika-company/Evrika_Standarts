@@ -42,7 +42,7 @@ module.exports = {
   allowBreakingChanges: ['fix'],
   footerPrefix: "Мета-данные:",
   subjectLimit: 120,
-  useEmoji: true,
+  useEmoji: false,
   emojiAlign: 'center',
   themeColorCode:"38;2;255;100;0",
   markBreakingChangeMode: false,
