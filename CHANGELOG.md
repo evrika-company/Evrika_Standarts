@@ -1,5 +1,12 @@
 
 
+## [1.2.1](https://github.com/evrika-company/Evrika_Standarts/compare/1.2.0...1.2.1) (2023-07-23)
+
+
+### Bug Fixes
+
+* **files:** удаление дирректории для запуска github actions ([718b056](https://github.com/evrika-company/Evrika_Standarts/commit/718b056e5202815c83d1b3fd939e97f9b63c2d71))
+
 # [1.2.0](https://github.com/evrika-company/Evrika_Standarts/compare/1.1.1...1.2.0) (2023-07-23)
 
 
