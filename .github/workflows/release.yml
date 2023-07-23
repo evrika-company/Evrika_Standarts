@@ -6,8 +6,6 @@ on:
 
 permissions:
   contents: read
-types:
-  - repository
 
 jobs:
   release:
