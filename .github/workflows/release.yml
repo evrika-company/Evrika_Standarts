@@ -1,10 +1,13 @@
 name: Release
 on:
   push:
-    permissions:
-      contents: read
-    types:
-      - repository
+    branches:
+      - master
+
+permissions:
+  contents: read
+types:
+  - repository
 
 jobs:
   release:
