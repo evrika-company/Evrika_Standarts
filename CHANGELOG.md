@@ -1,5 +1,12 @@
 
 
+# [1.2.0](https://github.com/evrika-company/Evrika_Standarts/compare/1.1.1...1.2.0) (2023-07-23)
+
+
+### Features
+
+* **code:** release.yml ([0e5dfcd](https://github.com/evrika-company/Evrika_Standarts/commit/0e5dfcd1c3dbcaac8e48eddc40290a6a7cccfa0f))
+
 ## [1.1.1](https://github.com/evrika-company/Evrika_Standarts/compare/1.1.0...1.1.1) (2023-07-14)
 
 
