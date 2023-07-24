@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/evrika-company/Evrika_Standarts/compare/v1.0.0...v1.0.1) (2023-07-24)
+
+
+### Bug Fixes
+
+* добавил badges в файл readme.md ([ffc1c6f](https://github.com/evrika-company/Evrika_Standarts/commit/ffc1c6fcb95d1073ddb94f9053b6b0687ca64247))
+
 # 1.0.0 (2023-07-24)
 
 
