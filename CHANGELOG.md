@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/evrika-company/Evrika_Standarts/compare/v1.0.1...v1.1.0) (2023-07-24)
+
+
+### Features
+
+* **code:** удаление переменной конфигурации отвечающей за цвет ([c5550aa](https://github.com/evrika-company/Evrika_Standarts/commit/c5550aaebbbda213125e99848ac55139930d3670))
+
 ## [1.0.1](https://github.com/evrika-company/Evrika_Standarts/compare/v1.0.0...v1.0.1) (2023-07-24)
 
 
