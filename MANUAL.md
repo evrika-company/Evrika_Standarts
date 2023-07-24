@@ -197,4 +197,45 @@ git cz
 ```
 После чего перед вами откроется интерактивная CLI для упрощенного процесса создания сообщения о фиксации.Следуйте инструкциям и подсказкам  и вы сможете создать осмысленное сообщение о фиксации : )
 
-__2.Автоматическое версионирование проекта,выпуск releases, генерация releases-notes :__
+__2.Автоматическое версионирование проекта, выпуск releases, генерация releases-notes :__
+
+Выше вы могли прочитать список самых рутинных задач котороые , что же с ними делать? Конечно Автоматизировать !!! 
+
+В качестве инсрументов автоматизации вы можете использовать GitLab CI, GitHub Actions, CircleCI в связке [semantic-release](https://semantic-release.gitbook.io/semantic-release/).Ниже представлен пример конфигурации созданный для GitHub Actions. Для более подробной информации касательно создания worflows c GitHub Actions обратитесь к [документации](https://docs.github.com/en/actions).
+
+
+Пример конфигурации :
+```yml
+name: Evrika Release
+run-name: ${{ github.actor }} is started out Release Actions 🚀
+on:
+  workflow_dispatch
+
+permissions:
+  contents: read 
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write 
+      issues: write 
+      pull-requests: write 
+      id-token: write 
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "lts/*"
+      - name: Install dependencies
+        run: npm ci
+      - name: Release Evrika Project
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run release
+```
