@@ -1,4 +1,6 @@
 # Evrika Standarts - Стандарты написания коммитов и управления версиями в компании Evrika
+[![Release](https://github.com/evrika-company/Evrika_Standarts/actions/workflows/release.yml/badge.svg)](https://github.com/evrika-company/Evrika_Standarts/actions/workflows/release.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 * [О важности стандартов работы с Git в процессе разработки](#chapter1)
 * [Что такое Evrika Standarts?](#chapter2)
