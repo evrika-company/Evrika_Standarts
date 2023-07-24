@@ -44,7 +44,6 @@ module.exports = {
   subjectLimit: 120,
   useEmoji: false,
   emojiAlign: 'center',
-  themeColorCode:"38;2;255;100;0",
   markBreakingChangeMode: false,
   breaklineNumber: 100,
   breaklineChar: '|',
