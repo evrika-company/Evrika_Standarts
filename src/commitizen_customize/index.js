@@ -61,7 +61,6 @@ module.exports = {
   defaultBody: '',
   defaultIssues: '',
   defaultScope: '',
-  defaultSubject: '',
   confirmColorize: true,
   allowCustomIssuePrefix: true,
   allowEmptyIssuePrefix: true,
