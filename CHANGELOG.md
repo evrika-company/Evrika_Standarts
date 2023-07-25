@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/evrika-company/Evrika_Standarts/compare/v1.1.1...v1.1.2) (2023-07-25)
+
+
+### Bug Fixes
+
+*  README.md ([f1d3c08](https://github.com/evrika-company/Evrika_Standarts/commit/f1d3c08adf2864606797c51634a2a8c4bbdf66dc))
+
 ## [1.1.1](https://github.com/evrika-company/Evrika_Standarts/compare/v1.1.0...v1.1.1) (2023-07-25)
 
 

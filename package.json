@@ -1,6 +1,6 @@
 {
   "name": "evrika_standarts",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "private": false,
   "description": "Agreements on writing commits and managing project versions in Evrika",
   "main": "src/index.js",
