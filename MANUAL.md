@@ -92,13 +92,20 @@ __1.Установка Commitizen :__
 npm i -D commitizen
 ```
 
-__2.Установка адаптера cz-git :__
+__2.Глобальная установка Commitizen :__
+
+```sh
+npm i -g commitizen
+```
+
+
+__3.Установка адаптера cz-git :__
 
 ```sh
 npm i -D cz-git
 ```
 
-__3.Настройка конфигурации :__
+__4.Настройка конфигурации :__
 
 В файле __package.json__ на верхнем уровне вложенности добавьте следующую конфигурацию :
 
@@ -125,7 +132,7 @@ npm i -D semantic-release
 __2.Установка плагинов для semantic-release :__
 
 ```sh
-npm install --save-dev @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/changelog @semantic-release/npm @semantic-release/github
+npm install --save-dev @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/changelog @semantic-release/npm @semantic-release/github @semantic-release/git
 ```
 __3.Настройка конфигурации :__
 
