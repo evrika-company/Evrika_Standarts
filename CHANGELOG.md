@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/evrika-company/Evrika_Standarts/compare/v1.1.0...v1.1.1) (2023-07-25)
+
+
+### Bug Fixes
+
+* **config:** исправлено начальное описание ([c15da70](https://github.com/evrika-company/Evrika_Standarts/commit/c15da70d30dd4929006c674b0b3e8d0d0e1746bd))
+
 # [1.1.0](https://github.com/evrika-company/Evrika_Standarts/compare/v1.0.1...v1.1.0) (2023-07-24)
 
 
