@@ -255,3 +255,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run release
 ```
+
+```sh
+npm i -D evrika_standarts
+npm i -g commitizen
+npm i -D cz-git
+npm i -D semantic-release
+npm install --save-dev @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/changelog @semantic-release/npm @semantic-release/github @semantic-release/git
+```
